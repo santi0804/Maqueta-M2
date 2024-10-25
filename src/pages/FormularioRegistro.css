@@ -1,0 +1,10 @@
+
+.form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(110vh - 1vh); /* Ajusta el alto para que no se desborde sobre el header */
+    margin-top: 20px; /* Esto se puede eliminar si usas un alto calculado */
+    overflow: auto; /* Agrega scroll si el contenido es demasiado grande */
+}

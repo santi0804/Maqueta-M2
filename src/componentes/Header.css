@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.header {
+    position: fixed;
+    width: 60%; 
+    max-width: 1200px; 
+    height: 12vh;
+    top: 1vw;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px; 
+    background: linear-gradient(50deg, black, #10e9b3);
+    border-radius: 10px; 
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+  
+  .button-header1 {
+    margin-right: 15vw; 
+    padding: 8px 30px;
+    background-color: white;
+    border: 2px solid #21a1f1; 
+    border-radius: 8px; 
+    color: black;
+    cursor: pointer;
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.button-header2{
+margin-left: 10vw; 
+padding: 8px 30px;
+background-color: white;
+border: 2px solid #21a1f1; 
+border-radius: 8px; 
+color: black;
+cursor: pointer;
+font-size: 18px; 
+transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.button:hover {
+    background-color: rgba(156, 163, 167, 0.932); 
+    color: white; /* Cambia el color del texto */
+    transform: scale(1.05); 
+}
+  
