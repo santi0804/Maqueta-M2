@@ -5,6 +5,7 @@ import Header from "../componentes/Header"; // Asegúrate de que la ruta sea cor
 import Login from "../pages/Login";
 import FormularioRegistro from "../pages/FomularioRegistro";
 import Dashboard from "../pages/Dashboard";
+import PanelControl from "../pages/PanelControl";
 
 const Enrutador = () => {
     return (
@@ -13,7 +14,8 @@ const Enrutador = () => {
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/" element={<Dashboard />}>
-                    <Route path="registrar" element={<FormularioRegistro />} />
+                <Route path="panel-control" element={<PanelControl />} />
+                <Route path="registrar" element={<FormularioRegistro />} />  
                 </Route>
             </Routes>
         </Router>

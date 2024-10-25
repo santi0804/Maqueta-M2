@@ -1,28 +1,19 @@
 {
   "userMaqueta": [
     {
-      "id": "001",
+      "id": "1",
       "user": "usuario1",
-      "password": "123456",
-      "name": "Rogelio",
-      "email": "rogelio@gmail.com",
-      "hobbies": [
-        "Hacer Dinero",
-        "Gym",
-        "Comer"
-      ]
+      "password": "1234"
     },
     {
-      "id": "002",
+      "id": "2",
       "user": "usuario2",
-      "password": "123456",
-      "name": "santiago",
-      "email": "santiago@gmail.com",
-      "hobbies": [
-        "Hacer Dinero y negocios",
-        "Gym",
-        "Cenar"
-      ]
-    }   
+      "password": "1234"
+    },
+    {
+      "id": "3",
+      "user": "usuario3",
+      "password": "1234"
+    }
   ]
 }

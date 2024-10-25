@@ -1,0 +1,54 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
+let urlUserMaqueta = "http://localhost:3001/userMaqueta"
+
+
+const Login = () => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+
+    
+
+    const signIn = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(urlUserMaqueta);
+            const users = await response.json();
+
+            const user = users.find(
+                (u) => u.username === username && u.password === password
+            );
+            if (user) {
+                console.log("Inicio de sesión exitoso");
+                navigate("/panel-control")  // Redirige al PanelControl
+            }
+            else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        } catch (error) {
+            console.error("Error al iniciar sesión:", error);
+        }
+    };
+
+    return (
+        <form className="form">
+            <section className="form-container">
+                <div className="input-group">
+                    <label htmlFor="usuario">Usuario</label>
+                    <input id="usuario" type="text" placeholder="Ingrese su usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
+                </div>
+
+                <div className="input-group">
+                    <label htmlFor="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Ingrese su contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
+                </div>
+
+                <button onClick={signIn} className="button" type="button">Iniciar sesión</button>
+            </section>
+        </form>
+    );
+};
+export default Login;
