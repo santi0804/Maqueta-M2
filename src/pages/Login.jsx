@@ -1,7 +1,12 @@
 import React from "react";
 /* import './Login.css' */
 
+let urlUserMaqueta = "http://localhost:3001/userMaqueta"
+
 const Login = () => {
+
+    
+
     const signIn = (e) => {
         e.preventDefault();
         console.log('Iniciar sesión')  // Logica inicio de sessión
