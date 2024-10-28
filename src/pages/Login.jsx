@@ -30,7 +30,7 @@ const Login = () => {
 
         if (findUser()) {
             console.log("Inicio de sesión exitoso");
-            direccion("/");  // Redirige al PanelControl
+            direccion("/panel-control");  // Redirige al PanelControl
 
         } else {
             alert("Usuario o contraseña incorrectos");

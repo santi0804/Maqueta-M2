@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import './Dashboard.css'
 import Header from '../componentes/Header';
-import FormularioRegistro from './FomularioRegistro';
 
 const Dashboard = () => {
 
@@ -11,12 +10,15 @@ const Dashboard = () => {
     return (
         <main>
             <Header />
-            <br />
-            <FormularioRegistro/>
             <nav className="dashboard-nav">
-                <Link to="/login" className="nav-link"></Link>
-                <Link to="/regitro" className="nav-link"></Link>
+                <Link to="/panel-control" className="nav-link">Panel de Control</Link>
+                <Link to="/registrar" className="nav-link">Registro</Link>
+                <Link to="/login" className="nav-link">Cerrar sesión</Link>
             </nav>
+
+            <div className='dashboard-content'>
+                <Outlet />
+            </div>
         </main>
 
     );

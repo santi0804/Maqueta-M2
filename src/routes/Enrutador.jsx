@@ -14,8 +14,8 @@ const Enrutador = () => {
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/" element={<Dashboard />}>
-                <Route path="panel-control" element={<PanelControl />} />
-                <Route path="registrar" element={<FormularioRegistro />} />  
+                    <Route path="panel-control" element={<PanelControl />} />
+                    <Route path="registrar" element={<FormularioRegistro />} />  
                 </Route>
             </Routes>
         </Router>
