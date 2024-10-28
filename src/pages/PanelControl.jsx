@@ -22,6 +22,11 @@ function PanelControl() {
                     <div className="section" key={section.id}>
                         <img src={section.img} alt={`Imagen ${section.id}`} className="section-image" />
                         <p className="section-bio">{section.bio}</p>
+                        <div className='button-group'>
+                            <button className='opcion'>One</button>
+                            <button className='opcion'>Two</button>
+                            <button className='opcion'>Three</button>
+                        </div>
                     </div>
                 ))}
             </div>

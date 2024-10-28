@@ -82,3 +82,22 @@
         width: 90%;
     }
 }
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Centra los botones en la sección */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 10px; /* Espacio superior para separación */
+}
+.opcion {
+    background-color: #2468e6; 
+    color: #fff; /* Color del texto */
+    padding: 2px 8px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.opcion:hover {
+    background-color: #21c946; /* Color de fondo al pasar el mouse */
+}
