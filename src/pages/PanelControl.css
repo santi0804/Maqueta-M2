@@ -18,13 +18,14 @@
     color: #fff;
 }
 
+
 .banner h1 {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
 }
 
 .logout-button {
-    background-color: #f44336;
+    background-color: #2468e6;
     color: #fff;
     padding: 8px 12px;
     border: none;
@@ -54,7 +55,7 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 300px;
     text-align: center;
 }
 

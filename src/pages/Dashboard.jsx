@@ -8,11 +8,6 @@ const Dashboard = () => {
 
     return (
         <main>
-            <nav className="dashboard-nav">
-                <Link to="/registrar" className="nav-link">Registro</Link>
-                <Link to="/login" className="nav-link">Cerrar sesión</Link>
-            </nav>
-
             <div className='dashboard-content'>
                 <Outlet />
             </div>
