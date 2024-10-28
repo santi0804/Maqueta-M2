@@ -1,6 +1,7 @@
 import React from "react";
 import './Login.css'
 import './FormularioRegistro.css'
+import Header from "../componentes/Header";
 
 
 const FormularioRegistro = () => {
@@ -11,6 +12,8 @@ const FormularioRegistro = () => {
     };
 
     return (
+        <div>
+            <Header/>
         <form className="form1">
             <section className="form-container">
             <div className="input-group">
@@ -41,6 +44,7 @@ const FormularioRegistro = () => {
                 <button onClick={handleRegister} className="button" type="button">Registrar</button>
             </section>
         </form>
+        </div>
         );
 };
 

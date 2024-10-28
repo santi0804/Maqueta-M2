@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; 
 import { useNavigate } from "react-router-dom";
+import Header from "../componentes/Header";
 
 const urlUserMaqueta = "http://localhost:3001/userMaqueta";
 
@@ -9,7 +10,7 @@ const Login = () => {
     const [users, setUsers] = useState([]);      // Estado para la lista de usuarios desde la API
 
     let direccion = useNavigate()
-
+    
     
     const getUsuarios = () => {     // Función para obtener la lista de usuarios
         fetch(urlUserMaqueta)
@@ -44,8 +45,9 @@ const Login = () => {
 
     return (
         <form className="form" action="">
-            <section className="form-container">
 
+            <section className="form-container">
+                    <Header/>
                 <div className="input-group">
                     <label htmlFor="username">Usuario</label>
                     <input id="username" type="text" placeholder="Ingresa tu usuario" value={usuario}
